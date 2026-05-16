@@ -303,33 +303,80 @@
 #     print("String is not a Palindrom")
 
 
+
 # Program to check if two string are anagrams of each other
 # Check if the character conuts in both strings are the same 
 
-s1 = "listen"
-s2 = "silent"
-is_anagram = True
-if len(s1) != len(s2):
-    is_anagram = False
-else:
-    for char in s1:
-        count_s1 = 0
-        for i in s1:
-            if i == char:
-                count_s1 += 1
-    for char in s1:
-        count_s1 = 0
-        for i in s1:
-            if i == char:
-                count_s1 += 1
-        count_s2 = 0
-        for j in s2:
-            if j == char:
-                count_s2 += 1
-        if count_s1 != count_s2:
-            is_anagram = False
-            break
-if is_anagram:
-    print(f"'{s1}' and '{s2}' are anagrams.")
-else:
-    print(f"'{s1}' and '{s2}' are NOT anagrams.")
+# s1 = "listen"
+# s2 = "silent"
+# is_anagram = True
+# if len(s1) != len(s2):
+#     is_anagram = False
+# else:
+#     for char in s1:
+#         count_s1 = 0
+#         for i in s1:
+#             if i == char:
+#                 count_s1 += 1
+#     for char in s1:
+#         count_s1 = 0
+#         for i in s1:
+#             if i == char:
+#                 count_s1 += 1
+#         count_s2 = 0
+#         for j in s2:
+#             if j == char:
+#                 count_s2 += 1
+#         if count_s1 != count_s2:
+#             is_anagram = False
+#             break
+# if is_anagram:
+#     print(f"'{s1}' and '{s2}' are anagrams.")
+# else:
+#     print(f"'{s1}' and '{s2}' are NOT anagrams.")
+
+
+
+# HOMEWORK 
+
+# Check for Pangram
+# str = "The quick brown fox jumps over the lazy dog.".lower()
+# alphabet = "abcdefghijklmnopqrstuvwxyz"
+# flag = True
+# for ch in alphabet:
+#     if ch not in str:
+#         flag = False
+#         break
+# if flag:
+#     print("Pangram")
+# else:
+#     print("Not Pangram")
+
+
+
+# Remove White Spaces
+# str = "hello world"
+# result = ""
+# for ch in str:
+#     if ch != " ":
+#         result = result + ch
+# print(result)
+
+
+
+# Count Words in a String
+# str = "This is a sentence."
+# count = 1
+# for ch in str:
+#     if ch == " ":
+#         count += 1
+# print(count)
+
+
+
+# Merge Two Sorted Lists
+# list1 = [1, 3, 5]
+# list2 = [2, 4, 6]
+# result = list1 + list2
+# result.sort()
+# print(result)
