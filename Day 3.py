@@ -76,36 +76,36 @@
 
 
 #Binary search
-def binary_search(n, arr, target):
-    flag = False
-    low = 0
-    high = n - 1
-    while low <= high:
-        mid = (low + high) // 2
-        if arr[mid] == target:
-            flag = True
-            loc = mid
-            break;
-            print("Element found at index: ", mid)
-            loc = mid
-            while loc > 0 and arr[loc - 1] == target:
-                loc -= 1
-            print("Element found at index: ", loc)
-            break
-        elif target < arr[mid]:
-            high = mid - 1
-        elif target > arr[mid]:
-            low = mid + 1
+# def binary_search(n, arr, target):
+#     flag = False
+#     low = 0
+#     high = n - 1
+#     while low <= high:
+#         mid = (low + high) // 2
+#         if arr[mid] == target:
+#             flag = True
+#             loc = mid
+#             break;
+#             print("Element found at index: ", mid)
+#             loc = mid
+#             while loc > 0 and arr[loc - 1] == target:
+#                 loc -= 1
+#             print("Element found at index: ", loc)
+#             break
+#         elif target < arr[mid]:
+#             high = mid - 1
+#         elif target > arr[mid]:
+#             low = mid + 1
 
-    if flag==True:
-        print("Search successful :", loc)
-    else:
-        print("Search unsuccessful")
+#     if flag==True:
+#         print("Search successful :", loc)
+#     else:
+#         print("Search unsuccessful")
 
-if __name__ == "__main__":
-    n=int(input("Enter  size of array: "))
-    arr=[]
-    for i in range(n):
-        arr.append(int(input("Enter element: ")))
-    target = int(input("Enter no to search: ")) 
-    binary_search(n, arr, target)
+# if __name__ == "__main__":
+#     n=int(input("Enter  size of array: "))
+#     arr=[]
+#     for i in range(n):
+#         arr.append(int(input("Enter element: ")))
+#     target = int(input("Enter no to search: ")) 
+#     binary_search(n, arr, target)
